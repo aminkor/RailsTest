@@ -1,0 +1,85 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  email: test@test.com
+  body: MyText
+  post: valid
+
+two:
+  name: MyString
+  email: MyString
+  body: MyText
+  post: valid
+
+valid: 
+  name: MyString
+  email: test@test.com
+  body: MyText
+  post: valid
+
+without_post: 
+  name: MyString
+  email: test@test.com
+  body: MyText
+
+without_body: 
+    name: MyString
+    email: test@test.com
+    post: valid
+
+without_email: 
+      name: MyString
+      body: MyText
+      post: valid
+
+without_name: 
+        email: test@test.com
+        body: MyText
+        post: valid
+
+invalid_email: 
+          name: MyString
+          email: invalidemail
+          body: MyText
+          post: valid
+
+<% (1..30).each do |i| %>
+comment_<%= i %>:
+  name: name
+  email: em@email.com
+  body: body
+  post_id: 100
+<% end %>
+
+<% (1..29).each do |i| %>
+comment_<%= 200 + i %>:
+  name: name
+  email: em@email.com
+  body: body
+  post_id: 101
+<% end %>
+
+<% (1..28).each do |i| %>
+comment_<%= 300 + i %>:
+  name: name
+  email: em@email.com
+  body: body
+  post_id: 102
+<% end %>
+
+<% (1..27).each do |i| %>
+comment_<%= 400 + i %>:
+  name: name
+  email: em@email.com
+  body: body
+  post_id: 103
+<% end %>
+
+<% (1..26).each do |i| %>
+comment_<%= 500 + i %>:
+  name: name
+  email: em@email.com
+  body: body
+  post_id: 104
+<% end %>
